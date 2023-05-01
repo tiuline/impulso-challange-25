@@ -9,6 +9,13 @@ document.addEventListener("DOMContentLoaded", function() {
     tagHead.appendChild(tagTitle);
     
     // tratar o corpo da pagina
-    var div = document.getElementById("aux");
-    div.innerHTML = "<h1>Minha Página Web com JavaScript</h1><p>Esta é a minha página web criada com JavaScript!</p>";
+    const auxDiv = document.getElementById("aux");
+    const cardDiv = document.createElement("div");
+    const photoDiv = document.createElement("div");
+
+    cardDiv.setAttribute("id","card");
+    photoDiv.setAttribute("id","foto");
+
+    auxDiv.appendChild(cardDiv)
+    cardDiv.appendChild(photoDiv)
 });

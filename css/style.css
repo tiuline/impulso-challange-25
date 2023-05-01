@@ -1,9 +1,40 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: rgb(5, 5, 5);
 }
-h1 {
-    color: #007bff;
+
+#aux {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
-p {
-    font-size: 1.2em;
+  
+#card {
+  /*tamanho e posição da div*/
+	width: 75%;
+	height: 90%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+  
+  /*configurações da imagem*/
+	background-image: url("../img/retrowave.gif");
+  background-position: center;
+  background-size: cover;
+	box-shadow: 0 0 50px 75px rgb(5, 5, 5) inset;
+	border-radius: 10px;
+}
+
+#foto {
+	width: 400px;
+	height: 400px;
+	background-image: url("../img/neon.jpg");
+  background-position: center;
+	background-size: cover;
+	border-radius: 10%;	
+	box-shadow: 
+    8px 8px 50px rgba(0, 247, 255, 0.3),
+    0 0 25px 5px rgb(0, 107, 107) inset;
 }
